@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"array": "c",
+		"sstream": "c",
+		"push_swap.h": "c"
+	}
+}
