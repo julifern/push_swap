@@ -6,7 +6,7 @@
 /*   By: julifern <julifern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 13:34:37 by julifern          #+#    #+#             */
-/*   Updated: 2025/04/21 19:58:20 by julifern         ###   ########.fr       */
+/*   Updated: 2025/04/23 17:05:01 by julifern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,14 @@ int		error_msg(t_stack *stack);
 
 // parsing_args
 
+int		has_overflow(char *str);
 int		is_valid(char **args);
 char	**get_args(char **array);
 
 // parsing_stack
 
-int	is_array_sorted(int *array, int size);
+int		is_duplicate(t_stack *stack, int *array);
+int		is_array_sorted(int *array, int size);
 void	init_stacks(t_stack *stack);
 void	fill_stack(t_stack *stack, char **args);
 
@@ -64,6 +66,5 @@ void	radix_sort(t_stack *stack);
 
 void	free_all(t_stack *stack);
 void	index_stack(t_stack *stack);
-
 
 #endif

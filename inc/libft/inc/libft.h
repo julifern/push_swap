@@ -6,7 +6,7 @@
 /*   By: julifern <julifern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 13:37:11 by julifern          #+#    #+#             */
-/*   Updated: 2025/04/21 11:49:40 by julifern         ###   ########.fr       */
+/*   Updated: 2025/04/22 18:50:02 by julifern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
+long	ft_atol(const char *nptr);
+int		ft_strcmp(char *s1, char *s2);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);

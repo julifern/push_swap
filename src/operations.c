@@ -6,7 +6,7 @@
 /*   By: julifern <julifern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 17:12:17 by julifern          #+#    #+#             */
-/*   Updated: 2025/04/21 18:49:49 by julifern         ###   ########.fr       */
+/*   Updated: 2025/04/23 17:03:10 by julifern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	pa(t_stack *stack, char *operation)
 	int	tmp;
 
 	if (stack->b_size == 0)
-			return ;
+		return ;
 	tmp = stack->b[0];
 	ft_memmove(stack->a + 1, stack->a, sizeof(int) * stack->a_size);
 	stack->a[0] = tmp;
@@ -42,7 +42,7 @@ void	pa(t_stack *stack, char *operation)
 void	pb(t_stack *stack, char *operation)
 {
 	int	tmp;
-	
+
 	if (stack->a_size == 0)
 		return ;
 	tmp = stack->a[0];
@@ -57,7 +57,7 @@ void	pb(t_stack *stack, char *operation)
 void	reverse(int *stack, char *operation, int size)
 {
 	int	tmp;
-	
+
 	tmp = stack[size - 1];
 	ft_memmove(stack + 1, stack, sizeof(int) * (size - 1));
 	stack[0] = tmp;
